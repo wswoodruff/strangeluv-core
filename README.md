@@ -3,7 +3,7 @@
 Core wiring and hapi plugin for the strangeluv React boilerplate
 
 ## API
-### `new Strangeluv.Wires(ctx)`
+### `new Strangeluv(ctx)`
 An instance of wires for a strangeluv application.  Currently provides wiring for reducers based-upon directory structure.  Receives a Webpack context of all `.js` files based at the app root.
 
 #### `wires.ctx`
