@@ -31,7 +31,7 @@ describe('strangeluv-core', () => {
 
         it('builds reducers config given webpack context, ignoring non-reducers.', (done) => {
 
-            const wires = new Strangeluv.Wires(ctx);
+            const wires = new Strangeluv(ctx);
 
             expect(wires.reducers()).to.equal({
                 pascalName: 'pascalName',
@@ -44,7 +44,7 @@ describe('strangeluv-core', () => {
 
         it('exposes context and normalized filenames.', (done) => {
 
-            const wires = new Strangeluv.Wires(ctx);
+            const wires = new Strangeluv(ctx);
 
             expect(wires.ctx).to.shallow.equal(ctx);
             expect(wires.files).to.have.length(4);
@@ -62,7 +62,7 @@ describe('strangeluv-core', () => {
 
             expect(() => {
 
-                new Strangeluv.Wires();
+                new Strangeluv();
             }).to.throw('Context not provided to the wires.');
 
             done();
@@ -70,7 +70,7 @@ describe('strangeluv-core', () => {
 
         it('memoizes reducers until flushed with flushReducers().', (done) => {
 
-            const wires = new Strangeluv.Wires(ctx);
+            const wires = new Strangeluv(ctx);
 
             const first = wires.reducers();
             const second = wires.reducers();
@@ -86,7 +86,7 @@ describe('strangeluv-core', () => {
 
         it('get() requires file from its normalized name.', (done) => {
 
-            const wires = new Strangeluv.Wires(ctx);
+            const wires = new Strangeluv(ctx);
 
             expect(wires.get('reducers/PascalName')).to.equal('pascalName');
 
