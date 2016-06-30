@@ -2,6 +2,8 @@
 
 Core wiring and hapi plugin for the strangeluv React boilerplate
 
+[![Build Status](https://travis-ci.org/BigRoomStudios/strangeluv-core.svg?branch=master)](https://travis-ci.org/BigRoomStudios/strangeluv-core)
+
 ## API
 ### `new Strangeluv(ctx)`
 An instance of wires for a strangeluv application.  Currently provides wiring for reducers based-upon directory structure.  Receives a Webpack context of all `.js` files based at the app root.
