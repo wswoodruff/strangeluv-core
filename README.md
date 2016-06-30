@@ -1,6 +1,6 @@
 # strangeluv-core
 
-Core wiring and hapi plugin for the strangeluv React boilerplate
+Core wiring and hapi plugin for the [strangeluv](https://github.com/BigRoomStudios/strangeluv) React boilerplate
 
 [![Build Status](https://travis-ci.org/BigRoomStudios/strangeluv-core.svg?branch=master)](https://travis-ci.org/BigRoomStudios/strangeluv-core)
 
