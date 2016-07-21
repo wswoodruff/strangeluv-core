@@ -36,7 +36,7 @@ module.exports = (server, options, next) => {
         server.ext('onRequest', (request, reply) => {
 
             const route = request.connection.match(request.method, request.path);
-            const noOtherRoute = (route.settings.id === 'strangeluv-core-catchall');
+            const noOtherRoute = (route.settings && route.settings.id === 'strangeluv-core-catchall');
             const isGet = (request.method === 'get');
             const takesHtml = internals.takesHtml(request.headers.accept);
             const looksLikeFile = (request.path.indexOf('.') !== -1);
