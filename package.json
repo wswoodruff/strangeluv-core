@@ -1,6 +1,6 @@
 {
   "name": "strangeluv-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Core wiring and hapi plugin for the strangeluv React boilerplate",
   "main": "lib/index.js",
   "scripts": {
