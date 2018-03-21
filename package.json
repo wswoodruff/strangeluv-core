@@ -26,10 +26,10 @@
   },
   "homepage": "https://github.com/BigRoomStudios/strangeluv-core#readme",
   "peerDependencies": {
-    "hapi": ">=10 <17"
+    "hapi": ">=17 <18"
   },
   "dependencies": {
-    "inert": "4.x.x",
+    "inert": "5.x.x",
     "webpack-dev-middleware": "1.x.x",
     "webpack-hot-middleware": "2.x.x"
   },
