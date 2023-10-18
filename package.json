@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "inert": "4.x.x",
-    "webpack-dev-middleware": "1.x.x",
+    "webpack-dev-middleware": "6.x.x",
     "webpack-hot-middleware": "2.x.x"
   },
   "devDependencies": {
