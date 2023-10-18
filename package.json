@@ -29,7 +29,7 @@
     "hapi": ">=17 <18"
   },
   "dependencies": {
-    "inert": "5.x.x",
+    "inert": "4.x.x",
     "webpack-dev-middleware": "6.x.x",
     "webpack-hot-middleware": "2.x.x"
   },
